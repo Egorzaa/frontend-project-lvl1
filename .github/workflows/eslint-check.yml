@@ -1,9 +1,8 @@
-name: hello-world
+name: eslint-check
 on: push
 jobs:
     my-job:
         runs-on: ubuntu-latest
         steps:
             - name: Run linter
-              run: |
-                  make lint
+              run: npx eslint .
