@@ -4,7 +4,5 @@ jobs:
     my-job:
         runs-on: ubuntu-latest
         steps:
-            with:
-                node-version: '14'
             - name: Run linter
             - run: make lint
